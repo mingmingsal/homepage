@@ -1,0 +1,73 @@
+*{
+    padding: 0px;
+    margin: 0px;
+    box-sizing: border-box;
+    
+}
+body {
+    background-color:cadetblue;
+}
+
+/* ABOUT ME SECTION */
+.about-me-info {
+    margin: 5vh 10vw ;
+    vertical-align: middle;
+    filter: drop-shadow(2px 2px 6px rgba(0,0,0,0.5));}
+
+.about-me-info > :is(.links, p, h2) {
+    background-color: white;
+    
+}
+.about-me-info > img {
+    height: 60vh;
+    float: left;
+    aspect-ratio: 5/6;
+    object-fit: cover;
+    margin-right: 1vw;
+    box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+    z-index: 2;
+}
+.about-me-info > h2 {
+    font-weight: normal;
+    font-size: clamp(3rem,4vw,6rem);
+    padding-top: 3vh;
+}
+.about-me-info > p {
+    font-size: clamp(2rem,2vw,3rem);
+    color:grey;
+    padding:2vh;
+}
+.about-me-padding {
+    height: 5vh;
+}
+.about-me-info > .links {
+    text-align: end;
+    font-size: clamp(1rem,2vw,3rem);
+    padding-right:2vw;
+    padding-bottom: 1vh;
+}
+
+#works{
+    clear: both;
+    margin: 10vh 10vw ;
+}
+
+@media (max-width:1200px){
+    .about-me-info {
+        margin: 5vh 5vw ;
+    }
+} 
+@media (max-width:800px){
+
+    .about-me-info > img {
+        float:none;
+        max-width: 100%;
+    }
+    .about-me-info > h2 {
+        text-align: center;
+    }
+    .about-me-info > h2,p {
+        text-align: center;
+    }
+    
+}
