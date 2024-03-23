@@ -46,11 +46,48 @@ body {
     padding-right:2vw;
     padding-bottom: 1vh;
 }
+/* WORKS */
 
 #works{
     clear: both;
     margin: 10vh 10vw ;
 }
+#works > h2 {
+    font-size: clamp(3rem,4vw,6rem);
+    font-weight: normal;
+    margin-bottom: 2vh;
+}
+#work-grid {
+    display: grid;
+    grid-template-rows: 600px 600px;
+    grid-template-columns: repeat(auto-fill,minmax(400px,1fr));
+    gap: 4vw;
+}
+.work-card{
+    background-color: white;
+    box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+}
+.work-card > img {
+    height: 50%;
+    width: 100%;
+    object-fit: cover;
+}
+
+.work-card > div {
+    padding: 1vw;
+}
+.work-card > .links{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.work-card h3 {
+    font-size: clamp(2rem,1.5vw,3rem);
+}
+.work-card p {
+    font-size: clamp(1rem,1vw,1.3rem);
+}
+/* MEDIA QUERIES */
 
 @media (max-width:1200px){
     .about-me-info {
